@@ -1,0 +1,20 @@
+.brand {
+  margin: 60px auto;
+  @media screen and (max-width:768px){
+    margin: 40px auto;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 20px;
+    @media screen and (max-width:768px){
+      font-size: 24px;
+    }
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}

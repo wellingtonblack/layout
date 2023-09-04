@@ -1,0 +1,32 @@
+.info-card {
+	margin: 80px auto;
+	@media screen and (max-width: 768px){
+		margin: 15px auto 57px;
+	}
+	.content {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		text-align: left;
+		justify-content: space-between;
+		@media screen and (max-width: 992px){
+			flex-direction: column;
+		}
+		.info {
+			flex-basis: 29%;
+			.title {
+				font-size: 24px;
+				font-weight: 700;
+				color: #000;
+				margin-bottom: 15px;
+			}
+			.text{
+				font-weight: 400;
+				font-size: 14px;
+			}
+		}
+		.card-banner {
+			flex-basis: 65%;
+		}
+	}
+}

@@ -1,0 +1,85 @@
+.shelf {
+  padding: 0 40px;
+  @media screen and (max-width:992px){
+    padding: 0 15px;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 25px;
+    @media screen and (max-width:768px){
+      font-size: 24px;
+    }
+  }
+  .card {
+    text-align: left;
+    max-width: 308px;
+
+    .details {
+      padding: 0 30px;
+
+      .sku-selector {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+
+        .color {
+          width: 27px;
+          height: 27px;
+          border-radius: 4px;
+
+        }
+      }
+
+      .best-price {
+        h4 {
+          font-size: 20px;
+          font-weight: 700;
+          color: #353535;
+        }
+      }
+
+      .productname {
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+      }
+
+      .description {
+        @extend .productname;
+        font-size: 12px;
+        opacity: 0.5;
+      }
+
+      .add-to-cart {
+        border: 0;
+        background: #FAA500;
+        width: 100%;
+        border-radius: 4px;
+        height: 35px;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 16px;
+        margin: 10px 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    left: -3px;
+    position: absolute;
+    @media screen and (max-width:768px) {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    right: -3px;
+    position: absolute;
+    @media screen and (max-width:768px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.menu {
+    @media screen and (max-width:992px){
+        display: none;
+    }
+}
+
+.list-menu {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    justify-content: space-around;
+    max-width: 1024px;
+    margin: 10px 10%;
+    height: 48px;
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: all ease-in-out .2s;
+        &:hover {
+            color:#FAA500;
+        }
+    }
+}
